@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #050816;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* STAR BACKGROUND */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(2px 2px at 20% 30%, #00ffff, transparent),
+    radial-gradient(2px 2px at 80% 70%, #00ffff, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 10% 90%, white, transparent);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #00ffff;
+}
+
+.logo {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #00ffff;
+}
+
+.hero h1 {
+  margin-top: 30px;
+  font-size: 48px;
+}
+
+.hero span {
+  color: #00ffff;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #b0b0b0;
+  font-size: 18px;
+}
+
+.location {
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.contacts {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts a {
+  color: #ff4da6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.buttons {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #00ffff;
+  color: black;
+  border: none;
+}
+
+.outline {
+  background: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+/* THEME BUTTON */
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+/* LIGHT MODE */
+body.light {
+  background: #f5f7fa;
+  color: #111;
+}
+
+body.light nav {
+  background: rgba(255,255,255,0.7);
+}
+
+body.light .logo {
+  color: #0066ff;
+}
+
+body.light nav li:hover {
+  color: #0066ff;
+}
+
+body.light .subtitle {
+  color: #444;
+}
+
+body.light .contacts a {
+  color: #0066ff;
+}
+
+body.light .primary {
+  background: #0066ff;
+  color: white;
+}
+
+body.light .outline {
+  border-color: #0066ff;
+  color: #0066ff;
+}
+
+/* LIGHT STAR BACKGROUND */
+body.light .stars {
+  background:
+    radial-gradient(2px 2px at 20% 30%, #0066ff, transparent),
+    radial-gradient(2px 2px at 80% 70%, #0066ff, transparent),
+    radial-gradient(1px 1px at 50% 50%, #999, transparent);
+}
+a {
+  text-decoration: none;
+}
+
+

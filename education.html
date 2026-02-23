@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Felix M. Morales Jr. | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="education.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+
+  <!-- Background stars -->
+  <div class="stars"></div>
+  
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html" class="logo">Felix M. Morales Jr.</a>
+    <ul>
+      <li>Projects</li>
+      <li>About</li>
+      <li>Education</li>
+      <li>Experience</li>
+    </ul>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </nav>
+
+  <section class="education">
+  <h2>Education</h2>
+
+  <div class="edu-card">
+    <div class="edu-header">
+      <div class="edu-title">
+        <ion-icon name="school-outline"></ion-icon>
+        <h3>Bachelor of Science in Information Technology</h3>
+      </div>
+      <div class="edu-date">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>2023 - 2027</span>
+      </div>
+    </div>
+
+    <p class="edu-school">
+      <strong>Manuel S. Enverga University Foundation - Lucena City</strong>
+    </p>
+
+    <p class="edu-specialization">
+      Specialization Track in Web & Mobile Application Development
+    </p>
+
+    <div class="edu-badges">
+      <span class="badge">University Scholar</span>
+      <span class="badge">Dean's Lister</span>
+      <span class="badge">GWA: 1.328</span>
+    </div>
+  </div>
+</section>
+<script>
+    const toggle = document.getElementById("themeToggle");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      toggle.textContent =
+        document.body.classList.contains("light") ? "🔆" : "🌙";
+    });
+  </script>
+</body>
+</html>
