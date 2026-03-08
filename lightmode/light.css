@@ -1,0 +1,47 @@
+/* LIGHT MODE */
+body.light {
+  background: #f5f7fa;
+  color: #111;
+}
+
+body.light nav {
+  background: rgba(255,255,255,0.7);
+}
+
+body.light .logo {
+  color: #0066ff;
+}
+
+body.light nav li:hover {
+  color: #0066ff;
+}
+
+body.light .subtitle {
+  color: #444;
+}
+
+body.light .contacts a {
+  color: #0066ff;
+}
+
+body.light .primary {
+  background: #0066ff;
+  color: white;
+}
+
+body.light .outline {
+  border-color: #0066ff;
+  color: #0066ff;
+}
+
+/* LIGHT STAR BACKGROUND */
+body.light .stars {
+  background:
+    radial-gradient(2px 2px at 20% 30%, #0066ff, transparent),
+    radial-gradient(2px 2px at 80% 70%, #0066ff, transparent),
+    radial-gradient(1px 1px at 50% 50%, #999, transparent);
+}
+a {
+  text-decoration: none;
+}
+

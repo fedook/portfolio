@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Felix M. Morales Jr. | Portfolio</title>
+  <link rel="stylesheet" href="../lightmode/light.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../education.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+
+  <!-- Background stars -->
+  <div class="stars"></div>
+  
+  <!-- Navbar -->
+  <nav>
+    <a href="../index.html" class="logo">Felix M. Morales Jr.</a>
+    <ul>
+      <li><a href="../index.html">Project</a></li>
+      <li>About</li>
+      <li>Education</li>
+      <li>Experience</li>
+    </ul>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </nav>
+  <section class="education">
+  <h2>Education</h2>
+
+  <div class="edu-card">
+    <div class="edu-header">
+      <div class="edu-title">
+        <ion-icon name="school-outline"></ion-icon>
+        <h3>Elementary School</h3>
+      </div>
+      <div class="edu-date">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>2016 - 2020</span>
+      </div>
+    </div>
+    <p class="edu-school">
+      <strong>Lucio O. Arquillano Memorial School</strong>
+    </p>
+
+    <div class="edu-badges">
+      <span class="badge">With Honor</span>
+      <span class="badge">GWA: 90</span>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-header">
+      <div class="edu-title">
+        <ion-icon name="school-outline"></ion-icon>
+        <h3>Junior High School</h3>
+      </div>
+      <div class="edu-date">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>2020 - 2021</span>
+      </div>
+    </div>
+
+    <p class="edu-school">
+      <strong>Camotes National High School</strong>
+    </p>
+
+    <div class="edu-badges">
+      <span class="badge">With Honor</span>
+      <span class="badge">GWA: 91</span>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-header">
+      <div class="edu-title">
+        <ion-icon name="school-outline"></ion-icon>
+        <h3>Senior High School</h3>
+      </div>
+      <div class="edu-date">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>2021 - 2023</span>
+      </div>
+    </div>
+
+    <p class="edu-school">
+      <strong>Camotes National High School</strong>
+    </p>
+
+    <div class="edu-badges">
+      <span class="badge">With Honor</span>
+      <span class="badge">GWA: 93</span>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-header">
+      <div class="edu-title">
+        <ion-icon name="school-outline"></ion-icon>
+        <h3>First Year College</h3>
+      </div>
+      <div class="edu-date">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>2023 - 2024</span>
+      </div>
+    </div>
+
+    <p class="edu-school">
+      <strong>Cordova Public College</strong>
+    </p>
+
+    <div class="edu-badges">
+      <span class="badge">Irregular</span>
+      <span class="badge">GWA: atleast buhi</span>
+    </div>
+  </div>
+</section>
+<script>
+    const toggle = document.getElementById("themeToggle");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      toggle.textContent =
+        document.body.classList.contains("light") ? "🔆" : "🌙";
+    });
+  </script>
+</body>
+</html>

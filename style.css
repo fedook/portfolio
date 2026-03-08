@@ -45,13 +45,20 @@ nav li {
   cursor: pointer;
 }
 
+
 nav li:hover {
   color: #00ffff;
+}
+nav ul li a {
+  color: inherit;       
 }
 
 .logo {
   color: #00ffff;
   font-weight: bold;
+}
+.logo a{
+  color:white;
 }
 
 /* HERO */

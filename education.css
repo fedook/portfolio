@@ -1,7 +1,7 @@
 .education {
   text-align: center;
   padding: 50px 20px;
-  background: #0a0f1c; /* dark background */
+  background: #0a0f1c; 
   color: white;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .edu-card {
-  background: #1e2233; /* slightly lighter than page */
+  background: #1e2233; 
   padding: 25px 30px;
   border-radius: 12px;
   max-width: 700px;
@@ -72,3 +72,37 @@
   border-radius: 8px;
   font-size: 12px;
 }
+
+body.light .education {
+  background: #fff;; 
+  color: #111;
+}
+
+body.light .edu-card {
+  background: #ffffff; 
+  color: #111;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light .edu-date {
+  color: #555;
+}
+
+body.light .edu-date ion-icon {
+  color: #555;
+}
+
+body.light .edu-school {
+  color: #d63384;
+}
+
+body.light .edu-specialization {
+  color: #666;
+}
+
+body.light .badge {
+  background: #00ffff;
+  color: black;
+}
+
+
